@@ -2,5 +2,5 @@
 # BoardContact
 
 [demo apk](sampleApk/dragContact.apk)  
-![demo.gif](https://s31.aconvert.com/convert/p3r68-cdx67/bggl3-9njd8.gif)
-![demo.gif](sampleApk/www.alltoall.net_svid_wv9ZSIOCAi.gif)
+![demo1.gif](https://github.com/xmq479361/BoardContact/blob/master/sampleApk/demo1.gif)
+![demo2.gif](https://github.com/xmq479361/BoardContact/blob/master/sampleApk/demo2.gif)
