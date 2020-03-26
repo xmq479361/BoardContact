@@ -1,0 +1,112 @@
+ext {
+//     // App dependencies
+    supportLibraryVersion = '25.3.1'
+//    supportLibraryVersion = '24.2.0'
+    guavaVersion = '18.0'
+    junitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+    powerMockitoVersion = '1.6.5'
+    easymockVersion = '3.3.1'
+
+    hamcrestVersion = '1.3'
+//    runnerVersion = '0.6-alpha'
+//    rulesVersion = '0.6-alpha'
+//    espressoVersion = '2.3-alpha'
+//    espressoCoreVersion = "2.3-alpha"
+    runnerVersion = '0.5'
+    rulesVersion = '0.5'
+    espressoVersion = '2.2.2'
+    espressoCoreVersion = "2.2.2"
+
+    multidexVersion = "1.0.1"
+    dexmakerVersion = "1.2"
+    uiautomatorVersion = "2.1.2"
+    rxlifeVersion = "2.1.0"
+//    rxjavaVersion = "2.1.0"
+//    rxandroidVersion = "2.0.1"
+//    rxjavaVersion = "1.0.14"
+//    rxandroidVersion = "1.1.0"
+    rxjavaVersion = "1.3.0"
+    rxandroidVersion = "1.2.1"
+    okhttpVersion = "3.8.1"
+    okioVersion = "3.8.1"
+
+
+    flexboxVersion = "0.3.2"
+    glideVersion = "4.0.0"
+    leakcanaryVersion = "1.5.4"
+//
+    zteTestVersion = "1.0.2"
+    jsonVersion = "20180813"
+    uiautomator = "2.1.2"
+    android = [
+
+            compileSdkVersion        : 25,
+            buildToolsVersion        : "25.0.3",
+            minSdkVersion            : 19,
+            minTestSdkVersion        : 18,
+            targetSdkVersion         : 25,
+            versionCode              : 1,
+            versionName              : "1.0.0",
+            testInstrumentationRunner: "android.support.test.runner.ZTEAndroidJUnitRunner"
+//            testInstrumentationRunner:"android.support.test.runner.AndroidJUnitRunner"
+
+    ]
+
+    dependencies = [
+            "leakcanary-android"                : "com.squareup.leakcanary:leakcanary-android:${leakcanaryVersion}",
+            "flexbox"                           : "com.google.android:flexbox:${flexboxVersion}",
+            "glide"                             : "com.github.bumptech.glide:glide:${glideVersion}",
+            "glide-processor"                   : "com.github.bumptech.glide:compiler:${glideVersion}",
+            // App's dependencies, including test
+            "support-v4"                        : "com.android.support:support-v4:${supportLibraryVersion}",
+            "recyclerview-v7"                   : "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+            "appcompat-v7"                      : "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            "annotations"                       : "com.android.support:support-annotations:${supportLibraryVersion}",
+            "cardview-v7"                       : "com.android.support:cardview-v7:${supportLibraryVersion}",
+            "design"                            : "com.android.support:design:${supportLibraryVersion}",
+            "multidex"                          : "com.android.support:multidex:${multidexVersion}",
+//            "rxjava"          : "io.reactivex.rxjava2:rxjava:${rxjavaVersion}",
+//            "rxandroid"       : "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}",
+            "rxjava"                            : "io.reactivex:rxjava:${rxjavaVersion}",
+            "rxandroid"                         : "io.reactivex:rxandroid:${rxandroidVersion}",
+            "okhttp"                            : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+
+
+            "rxlife"                            : "com.trello.rxlifecycle2:rxlifecycle:${rxlifeVersion}",
+            "rxlife-android"                    : "com.trello.rxlifecycle2:rxlifecycle-android:${rxlifeVersion}",
+            "rxlife-components"                 : "com.trello.rxlifecycle2:rxlifecycle-components:${rxlifeVersion}",
+            "guava"                             : "com.google.guava:guava:${guavaVersion}",
+//            // Dependencies for local unit tests
+            "junit"                             : "junit:junit:${junitVersion}",
+            "junit-json"                        : "org.json:json:${jsonVersion}",
+            "hamcrest"                          : "org.hamcrest:hamcrest-all:${hamcrestVersion}",
+//            // Android Testing Support Library's runner and rules
+            "testRunner"                        : "com.android.support.test:runner:${runnerVersion}",
+            "testRules"                         : "com.android.support.test:rules:${runnerVersion}",
+//            // Dependencies for Android unit tests
+            "mockito-all"                       : "org.mockito:mockito-all:${mockitoVersion}",
+            "mockito-core"                      : "org.mockito:mockito-core:${mockitoVersion}",
+            "dexmaker"                          : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+            "dexmaker-mockito"                  : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+//            // Espresso UI Testing
+            "espresso"                          : "com.android.support.test.espresso:espresso-idling-resource:${espressoVersion}",
+            "espresso-core"                     : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            "espresso-contrib"                  : "com.android.support.test.espresso:espresso-contrib:${espressoVersion}",
+            "espresso-intents"                  : "com.android.support.test.espresso:espresso-intents:${espressoVersion}",
+
+            "uiautomator"                       : "com.android.support.test.uiautomator:uiautomator-v18:${uiautomator}",
+
+            "easymock"                          : "org.easymock:easymock:${easymockVersion}",
+            "power-mockito-api-easymock"        : "org.powermock:powermock-api-easymock:${powerMockitoVersion}",
+            "power-mockito-api"                 : "org.powermock:powermock-api-mockito2:${powerMockitoVersion}",
+            "power-mockito-core"                : "org.powermock:powermock-core:${powerMockitoVersion}",
+            "power-mockito-junit4"              : "org.powermock:powermock-module-junit4:${powerMockitoVersion}",
+            "power-mockito-junit4-rule"         : "org.powermock:powermock-module-junit4-rule:${powerMockitoVersion}",
+            "power-mockito-classloading-xstream": "org.powermock:powermock-classloading-xstream:${powerMockitoVersion}"
+
+
+    ]
+
+}
+

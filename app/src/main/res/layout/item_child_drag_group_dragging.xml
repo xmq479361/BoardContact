@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_board_drag_item_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <!--android:layout_marginBottom="6dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"-->
+    <TextView
+        android:id="@+id/tv_contact_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_child_drag_column_height"
+        android:background="@drawable/bg_shape_contact_drag_selector"
+        android:textColor="@drawable/bg_shape_contact_drag_textcolor_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/item_child_drag_column_text_size" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="id_board_column_container" type="id" />
+    <item name="id_board_sail_container" type="id" />
+    <item name="id_board_view_frame" type="id" />
+    <item name="id_sail_plug" type="id" />
+    <item name="id_sail_canvas" type="id" />
+    <!--<item name="id_sail_canvas_copy" type="id" />-->
+    <!--<item name="id_sail_plug_copy" type="id" />-->
+
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xmqiu.ui.mailcreate.MailCreateHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/creat_new_mail_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.mailcreate.MailCreateActivity">
+
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <FrameLayout
+        android:id="@id/id_board_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/creatmail_totle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/BgColorSecond"
+                android:text="Thanks you for watch!" />
+
+            <View style="@style/new_see_text_line" />
+
+            <LinearLayout
+                android:id="@id/id_board_sail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BgColorMain"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <!-- 收件人 -->
+                <com.xmqiu.widget.dgv.SailLayout
+                    android:id="@+id/id_sail_layout_recv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:canvasId="@+id/id_sail_canvas_recv"
+                    app:plugId="@+id/id_sail_plug_recv">
+
+                    <TextView
+                        android:id="@+id/id_mail_create_contacts_text"
+                        style="@style/Style_DragContactLabel"
+                        android:text="@string/mail_create_lable_receiver" />
+
+
+                    <com.xmqiu.widget.dgv.DragItemRecyclerView
+                        android:id="@+id/id_sail_canvas_recv"
+                        style="@style/Style_DragContactRecyclerView"
+                        android:layout_toLeftOf="@id/ico_add_contact_select_recv"
+                        android:layout_toRightOf="@id/id_mail_create_contacts_text" />
+
+                    <com.xmqiu.widget.dgv.DragItemRecyclerView
+                        android:id="@+id/id_sail_plug_recv"
+                        style="@style/Style_DragContactRecyclerView"
+                        android:layout_toLeftOf="@id/ico_add_contact_select_recv"
+                        android:layout_toRightOf="@id/id_mail_create_contacts_text"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ico_add_contact_select_recv"
+                        style="@style/Style_DragContactIcon"
+                        android:src="@android:drawable/ic_input_add" />
+
+                </com.xmqiu.widget.dgv.SailLayout>
+
+                <View
+                    style="@style/new_see_text_line_margin_left"
+                    android:layout_alignParentBottom="true" />
+                <!-- 抄送人 -->
+                <com.xmqiu.widget.dgv.SailLayout
+                    android:id="@+id/id_sail_layout_copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:canvasId="@id/id_sail_canvas_copy"
+                    app:plugId="@id/id_sail_plug_copy">
+
+                    <TextView
+                        android:id="@+id/id_mail_create_add_contacts_text"
+                        style="@style/Style_DragContactLabel"
+                        android:text="@string/mail_create_lable_copy" />
+
+
+                    <com.xmqiu.widget.dgv.DragItemRecyclerView
+                        android:id="@+id/id_sail_canvas_copy"
+                        style="@style/Style_DragContactRecyclerView"
+                        android:layout_toLeftOf="@id/ico_add_contact_select_copy"
+                        android:layout_toRightOf="@id/id_mail_create_add_contacts_text" />
+
+                    <com.xmqiu.widget.dgv.DragItemRecyclerView
+                        android:id="@+id/id_sail_plug_copy"
+                        style="@style/Style_DragContactRecyclerView"
+                        android:layout_toLeftOf="@id/ico_add_contact_select_copy"
+                        android:layout_toRightOf="@id/id_mail_create_add_contacts_text"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ico_add_contact_select_copy"
+                        style="@style/Style_DragContactIcon"
+                        android:src="@android:drawable/ic_input_add" />
+
+                    <!--<View-->
+                        <!--style="@style/new_see_text_line_margin_left"-->
+                        <!--android:layout_alignParentBottom="true" />-->
+                </com.xmqiu.widget.dgv.SailLayout>
+
+                <View
+                    style="@style/new_see_text_line_margin_left"
+                    android:layout_alignParentBottom="true" />
+                <!-- 密送人 -->
+                <com.xmqiu.widget.dgv.SailLayout
+                    android:id="@+id/id_sail_layout_secret_copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:canvasId="@+id/id_sail_canvas_secret_copy"
+                    app:plugId="@+id/id_sail_plug_secret_copy">
+
+                    <TextView
+                        android:id="@+id/id_mail_create_add_carbon_copy_contacts_textview"
+                        style="@style/Style_DragContactLabel"
+                        android:text="@string/mail_create_lable_secrect" />
+
+                    <com.xmqiu.widget.dgv.DragItemRecyclerView
+                        android:id="@+id/id_sail_canvas_secret_copy"
+                        style="@style/Style_DragContactRecyclerView"
+                        android:layout_toLeftOf="@id/ico_add_contact_select_secret_copy"
+                        android:layout_toRightOf="@id/id_mail_create_add_carbon_copy_contacts_textview" />
+
+                    <com.xmqiu.widget.dgv.DragItemRecyclerView
+                        android:id="@+id/id_sail_plug_secret_copy"
+                        style="@style/Style_DragContactRecyclerView"
+                        android:layout_toLeftOf="@id/ico_add_contact_select_secret_copy"
+                        android:layout_toRightOf="@id/id_mail_create_add_carbon_copy_contacts_textview"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ico_add_contact_select_secret_copy"
+                        style="@style/Style_DragContactIcon"
+                        android:src="@android:drawable/ic_input_add" />
+                </com.xmqiu.widget.dgv.SailLayout>
+                <View
+                    style="@style/new_see_text_line_margin_left"
+                    android:layout_alignParentBottom="true" />
+                <!-- 主题 -->
+                <LinearLayout
+                    android:id="@+id/id_mail_create_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_drag_column_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_mail_create_title_text"
+                        style="@style/Style_DragContactLabel"
+                        android:text="@string/mail_create_lable_title" />
+
+                    <EditText
+                        android:id="@+id/id_mail_create_mailinfo_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:ems="10"
+                        android:maxEms="120"
+                        android:maxLength="1024"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/item_child_drag_column_text_size">
+
+                    </EditText>
+
+                    <!-- 删除按钮 -->
+                    <ImageView
+                        android:id="@+id/id_mail_create_title_clear"
+                        android:layout_width="@dimen/item_child_drag_column_icon_width"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@android:drawable/ic_delete" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/new_see_text_line" />
+
+
+            <EditText
+                android:id="@+id/id_mail_create_edit_content"
+                style="@style/TextSizeStyle_DetailLeftDetail"
+                android:background="@color/BgColorSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:gravity="left|top"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+    </FrameLayout>
+</com.xmqiu.ui.mailcreate.MailCreateHeaderView>

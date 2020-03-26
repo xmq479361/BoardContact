@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- 分割线的直线样式 -->
+    <style name="new_see_text_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/SpaceLineBgColor</item>
+    </style>
+    <!-- 详情界面布局的左边据直线样式 -->
+    <style name="new_see_text_line_margin_left">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/mail_detail_about_line_left_margin</item>
+        <item name="android:layout_height">@dimen/space_line_size</item>
+        <item name="android:background">@color/SpaceLineBgColor</item>
+    </style>
+    <!-- 详情左侧详情文字-->
+    <style name="TextSizeStyle_DetailLeftDetail">
+        <item name="android:textSize">@dimen/detail_left_detail_text_size</item>
+        <item name="android:layout_width">@dimen/detail_left_detail_width</item>
+    </style>
+    <style name="Style_DragContactLabel" >
+        <item name="android:textSize">@dimen/detail_left_detail_text_size</item>
+        <item name="android:textColor">@color/TextColorMain</item>
+        <item name="android:layout_height">@dimen/item_drag_column_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Style_DragContactRecyclerView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="Style_DragContactIcon">
+        <item name="android:layout_width">@dimen/item_child_drag_column_icon_width</item>
+        <item name="android:layout_height">@dimen/item_drag_column_height</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="Style_FlowChild">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/flow_margin</item>
+        <item name="android:paddingLeft">@dimen/flow_padding_horional</item>
+        <item name="android:paddingRight">@dimen/flow_padding_horional</item>
+        <item name="android:paddingTop">@dimen/flow_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/flow_padding_vertical</item>
+        <item name="android:textColor">@color/TextColorDragging</item>
+        <item name="android:background">@drawable/shape_tv_blue</item>
+    </style>
+</resources>
+

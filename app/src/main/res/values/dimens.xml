@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="mail_detail_about_line_left_margin">10dp</dimen>
+    <dimen name="mail_detail_about_title_padding">5dp</dimen>
+    <dimen name="space_line_size">1px</dimen>
+    <dimen name="detail_left_detail_text_size">14sp</dimen>
+    <dimen name="detail_left_detail_width">50dp</dimen>
+    <dimen name="item_drag_column_height">40dp</dimen>
+    <dimen name="item_child_drag_column_icon_width">20dp</dimen>
+    <dimen name="flow_margin">6dp</dimen>
+    <dimen name="flow_padding_vertical">4dp</dimen>
+    <dimen name="flow_padding_horional">10dp</dimen>
+</resources>

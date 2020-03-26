@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xmqiu.widget.dgv.CustomDragNoneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/id_board_drag_item_input"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_child_drag_column_height"
+        android:layout_weight="1"
+        android:background="@null"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:minWidth="50dp"
+        android:textColor="@color/ColorDragGroupHighLight"
+        android:textSize="@dimen/item_child_drag_column_text_size" />
+
+</com.xmqiu.widget.dgv.CustomDragNoneLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 编辑联系人高亮关键字-->
+    <color name="TextColorDragNormal">#333333</color>
+    <color name="TextColorDragging">#ffffff</color>
+    <color name="TextColorMain">#666666</color>
+    <color name="SpaceLineBgColor">#BBBBBB</color>
+    <color name="BgColorMain">#F4F4F4</color>
+    <color name="BgColorSecond">#FFFFFF</color>
+</resources>

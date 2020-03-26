@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BoardContact</string>
+    <string name="drag_please_fillin_key">请输入关键字！</string>
+    <string name="mail_create_lable_receiver">收件人：</string>
+    <string name="mail_create_lable_carbon_secrect_copy">抄送/密送：</string>
+    <string name="mail_create_lable_copy">抄&#160;&#160;&#160;&#8201;送：</string>
+    <string name="mail_create_lable_secrect">密&#160;&#160;&#160;&#8201;送：</string>
+    <string name="mail_create_lable_title">主&#160;&#160;&#160;&#8201;题：</string>
+    <string name="mail_edit_no_search_result">没有搜索到联系人</string>
+    <string name="respones_false" >无法连接到服务器,请检查您的网络或者稍后重试</string>
+</resources>

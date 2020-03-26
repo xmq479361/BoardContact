@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SailLayout">
+        <attr name="plugId" format="integer"/>
+        <attr name="canvasId" format="integer"/>
+    </declare-styleable>
+
+</resources>

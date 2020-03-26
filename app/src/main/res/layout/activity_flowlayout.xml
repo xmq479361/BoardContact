@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xmqiu.widget.flow.FlowLayout
+        android:id="@+id/id_flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SpaceLineBgColor"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <!--<Flow-->
+    <com.xmqiu.widget.flow.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SpaceLineBgColor">
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="欧美影视" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="婚姻育儿" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="散文" />
+
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="程序员" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="大学生生活" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="运营互助帮" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="设计" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="读书" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="欧美影视" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="婚姻育儿" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="散文" />
+
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="程序员" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="大学生生活" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="运营互助帮" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="设计" />
+
+        <TextView
+            style="@style/Style_FlowChild"
+            android:text="读书" />
+    </com.xmqiu.widget.flow.FlowLayout>
+</LinearLayout>
